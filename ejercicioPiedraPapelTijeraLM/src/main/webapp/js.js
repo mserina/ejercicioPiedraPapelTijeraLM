@@ -9,9 +9,7 @@
 	 const opciones = ["PIEDRA", "PAPEL","TIJERAS"];
 	 
 	 let numeroAleatroo= Math.trunc(Math.random() * 3);
-	/* var elementoConcreto = opciones[numeroAleatroo]; */
-	  
-	/* for(let i=0; i < opciones.length; i++){*/
+	
 
 		 switch(numeroAleatroo){
 			 case 0:
@@ -25,34 +23,55 @@
 			case 2:
 				 alert("HA GANADO");
 				 alert(opciones[numeroAleatroo]);
-				break;
-		/* }*/
-		 
+				break;	 
 	 }
 	 
 	 
-	 
-	 
- 
  
   function Papel(){
 	 
-	 const respuestaUsuario = prompt("INSERTE: PIEDRA, PAPEL, O TIJERA");
+	const EMPATE = ["PIEDRA", "PAPEL","TIJERAS"];
 	 
-	 const opciones = ["PIEDRA", "PAPEL","TIJERAS"];
-	 
-	 let numeroAleatroo= Math.random() * 3;
-	 for(let i; i < opciones.length; i++){
-		 
-		 if(opciones){
-			 
-		 }
+	 let numeroAleatroo= Math.trunc(Math.random() * 3);
+	
+
+		 switch(numeroAleatroo){
+			 case 0:
+				 alert("HA GANADO");
+				 alert(opciones[numeroAleatroo]);
+				 break;
+			case 1:
+				 alert("EMPATE");
+				 alert(opciones[numeroAleatroo]);
+				break;
+			case 2:
+				 alert("HA PERDIDO");
+				 alert(opciones[numeroAleatroo]);
+				break;
+ 		}
 	 }
 	 
-	 alert(numeroAleatroo);
+	 function Tijera(){
+		 
+		 const opciones = ["PIEDRA", "PAPEL","TIJERAS"];
 	 
-	 
-	 
+	 let numeroAleatroo= Math.trunc(Math.random() * 3);
+	
+
+		 switch(numeroAleatroo){
+			 case 0:
+				 alert("HAS PERDIDO");
+				 alert(opciones[numeroAleatroo]);
+				 break;
+			case 1:
+				 alert("HAS GANADO");
+				 alert(opciones[numeroAleatroo]);
+				break;
+			case 2:
+				 alert("EMPATE");
+				 alert(opciones[numeroAleatroo]);
+				break;
+	 }	
  }
  
- }
+ 
