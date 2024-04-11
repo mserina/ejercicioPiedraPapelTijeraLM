@@ -26,11 +26,13 @@
 				break;	 
 	 }
 	 
-	 
+}
  
+  
+  
   function Papel(){
 	 
-	const EMPATE = ["PIEDRA", "PAPEL","TIJERAS"];
+	const opciones = ["PIEDRA", "PAPEL","TIJERAS"];
 	 
 	 let numeroAleatroo= Math.trunc(Math.random() * 3);
 	
@@ -48,10 +50,13 @@
 				 alert("HA PERDIDO");
 				 alert(opciones[numeroAleatroo]);
 				break;
- 		}
+ 		
 	 }
-	 
-	 function Tijera(){
+	  
+} 
+ 
+ 
+ function Tijera(){
 		 
 		 const opciones = ["PIEDRA", "PAPEL","TIJERAS"];
 	 
@@ -71,7 +76,6 @@
 				 alert("EMPATE");
 				 alert(opciones[numeroAleatroo]);
 				break;
-	 }	
- }
- 
+		 }	
+	}
  
